@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MyBus</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <!-- Login Activity -->
+    <string name="title_activity_login">MyBus | Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_error">"A fatal error has occurred."</string>
+    <string name="login_failed">"Wrong username or password."</string>
+
+    <!-- Main Activity -->
+    <string name="title_activity_main">MyBus | Dashboard</string>
+    <string name="clock_in">Clock In</string>
+    <string name="clock_out">Clock Out</string>
+    <string name="driver_name">Name</string>
+    <string name="driver_nric">NRIC</string>
+    <string name="driver_mobile">Mobile</string>
+    <string name="shift">Your Shift</string>
+    <string name="completed_shift">Completed Shift</string>
+    <string name="start_shift">Start Shift</string>
+    <string name="end_shift">End Shift</string>
+    <string name="error_no_bus">No bus available.</string>
+</resources>
