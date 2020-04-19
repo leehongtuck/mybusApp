@@ -52,7 +52,6 @@ public class LocationTrackerService extends Service {
             @Override
             public void onLocationResult(LocationResult locationResult) {
                 super.onLocationResult(locationResult);
-                Toast.makeText(getApplicationContext(),"latitude is " + locationResult.getLastLocation().getLatitude(), Toast.LENGTH_LONG).show();
                 sendGeoLocation(locationResult.getLastLocation().getLatitude(), locationResult.getLastLocation().getLongitude());
             }
         };
@@ -68,8 +67,7 @@ public class LocationTrackerService extends Service {
         task.addOnSuccessListener(new OnSuccessListener<LocationSettingsResponse>() {
             @Override
             public void onSuccess(LocationSettingsResponse locationSettingsResponse) {
-                Toast.makeText(getApplicationContext(), "Location service on", Toast.LENGTH_SHORT).show();
-                locationRequest.setInterval(15000);
+                locationRequest.setInterval(3000);
                 locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
                 fusedLocationProviderClient.requestLocationUpdates(locationRequest, locationCallback, Looper.myLooper());
             }
